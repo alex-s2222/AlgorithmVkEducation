@@ -22,17 +22,17 @@
 
 ```golang 
 // структура каждого узла 
-Node{
+type Node struct{
     data int 
-    next Node
+    next *Node
 }
 ```
 
 ```golang
 ///структура списка 
-LinkedList{
-    head Node //голова списка 
-    tail Node //указатель на последний размер (может отсутствовать)
+type LinkedList struct{
+    head *Node //голова списка 
+    tail *Node //указатель на последний размер (может отсутствовать)
     size int //Размер
 }
 ```
